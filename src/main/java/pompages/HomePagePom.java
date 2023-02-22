@@ -11,7 +11,7 @@ public class HomePagePom {
 	//Declaration
 	@FindBy(xpath="//img[@alt='SkillRary']")	
 	private WebElement logo;
-	@FindBy(xpath = "//input[@type=\"search\"]")							
+	@FindBy(xpath = "//input[@type='search']")							
 	private WebElement searchTF;
 	@FindBy(xpath="//input[@value='go']")		
 	private WebElement searchButton;
