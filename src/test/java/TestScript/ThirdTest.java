@@ -15,7 +15,7 @@ public class ThirdTest extends BaseClass
 	{
 		SoftAssert soft=new SoftAssert();
 		
-		
+		home.search();
 		home.searchFor("core java for selenium");
 		soft.assertEquals(coreJava.getPageHeader(),"CORE JAVA FOR SELENIUM");
 		

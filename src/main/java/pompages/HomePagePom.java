@@ -31,9 +31,11 @@ public class HomePagePom {
 	public WebElement getLogo()	{
 		return logo;
 		}
-	
-	public void searchFor(String data) {
+	public void search()
+	{
 		searchTF2.click();
+	}
+	public void searchFor(String data) {
 		searchTF.sendKeys(data);
 		searchButton.click();
 	}
