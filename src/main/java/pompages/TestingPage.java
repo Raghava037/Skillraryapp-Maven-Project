@@ -10,9 +10,9 @@ public class TestingPage {
 	//Declaration
 	@FindBy(xpath = "//h1[@class='page-header']")
 	private WebElement pageHeader;
-	@FindBy(id = "Selenium Training")
+	@FindBy(xpath = "//*[@id=\"Selenium Training\"]")
 	private WebElement seleniumImage;
-	@FindBy(id = "cartArea")
+	@FindBy(xpath = "//*[@id=\"cartArea\"]")
 	private WebElement cartArea;
 	@FindBy(xpath = "//footer[@class='main-footer']/descendant::i[@class='fa fa-facebook']")
 	private WebElement facebookIcon;
