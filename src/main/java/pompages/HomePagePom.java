@@ -11,8 +11,10 @@ public class HomePagePom {
 	//Declaration
 	@FindBy(xpath="//img[@alt='SkillRary']")	
 	private WebElement logo;
-	@FindBy(xpath = "//*[@id=\"front-header\"]/div[3]/header/div/div/div[1]/div[2]/div[2]/form/input[1]")							
+	@FindBy(xpath = "//*[@id=\"front-header\"]/div[3]/header/div/div/div[1]/div[2]/div[2]/form/input[1]")
 	private WebElement searchTF;
+	@FindBy(xpath = "//*[@id=\"front-header\"]/div[3]/header/div/div/div[1]/div[2]/div[2]")
+	private WebElement searchTF2;
 	@FindBy(xpath="//input[@value='go']")		
 	private WebElement searchButton;
 	@FindBy(xpath="//a[text()=' GEARS ']")		
@@ -31,7 +33,9 @@ public class HomePagePom {
 		}
 	
 	public void searchFor(String data) {
+		
 		searchTF.sendKeys(data);
+		searchTF2.click();
 		searchButton.click();
 	}
 	
