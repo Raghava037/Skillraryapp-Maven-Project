@@ -11,8 +11,10 @@ import GenericLibraries.WebDriverUtility;
 public class SkillraryDemoAppPagePom {
 	
 	//Declaration
-	@FindBy(xpath = "//div[@Class='navbar-header']")	private WebElement pageHeader;
-	@FindBy(id="course")								private WebElement courseTab;
+	@FindBy(xpath = "//div[@Class='navbar-header']")	
+	private WebElement pageHeader;
+	@FindBy(xpath = "//a[@id=\"course\"]")								
+	private WebElement courseTab;
 	@FindBy(xpath="//span[@class='wrappers']/a[text()='Selenium Training']")
 														private WebElement SeleniumTrainingLink;
 	@FindBy(name="addresstype")							private WebElement categoryDropdown;

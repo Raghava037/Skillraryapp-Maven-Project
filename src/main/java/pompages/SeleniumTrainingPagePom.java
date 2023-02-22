@@ -13,9 +13,12 @@ public class SeleniumTrainingPagePom {
 	//Declaration
 	@FindBy (xpath ="//h1[@class='page-header']")		
 	private WebElement pageHeader;
-	@FindBy (id="add")									private WebElement plusButton;
-	@FindBy (xpath ="//button[text()=' Add to Cart']")	private WebElement addToCartButton;
-	@FindBy (xpath ="//div[@id='callout']/span")		private WebElement itemAddedMessage;
+	@FindBy (xpath = "//button[@id=\"add\"]")									
+	private WebElement plusButton;
+	@FindBy (xpath ="//button[text()=' Add to Cart']")	
+	private WebElement addToCartButton;
+	@FindBy (xpath ="//div[@id='callout']/span")		
+	private WebElement itemAddedMessage;
 
 	//Initialization
 	public  SeleniumTrainingPagePom(WebDriver driver) {
