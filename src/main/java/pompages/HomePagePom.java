@@ -33,9 +33,8 @@ public class HomePagePom {
 		}
 	
 	public void searchFor(String data) {
-		
-		searchTF.sendKeys(data);
 		searchTF2.click();
+		searchTF.sendKeys(data);
 		searchButton.click();
 	}
 	
